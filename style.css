@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 3em;
+}
+
+body {
+    height: 150vh;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+textarea {
+    background-color: #222222;
+    width: 60rem;
+    height: 30rem;
+    resize: none;
+    color: #ffffff;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+input {
+    margin: 3em;
+    padding: 1em;
+    background-color: #222222;
+    color: white;
+    outline: none;
+    border-radius: 1em;
+    border-color: white;
+}
