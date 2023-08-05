@@ -13,7 +13,12 @@ const view = async () => {
 
     for (const server of servers) {
         try {
-            const response = await fetch(api + server + "?byName=true");
+            await fetch(api + server + "?byName=true").then((res) => {
+                if (!res.ok) {
+                    out += server + "\n";
+                    output.value = out;
+                }
+            });
         } catch (err) {
             out += server + "\n";
             output.value = out;
