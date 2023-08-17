@@ -10,7 +10,10 @@ const view = async () => {
     viewButton.disabled = true;
     const servers = input.value
         .split("\n")
-        .filter((str) => str.length >= 4 && str.length <= 12);
+        .filter(
+            (str) =>
+                str.length >= 4 && str.length <= 12 && /^[a-zA-Z]+$/.test(str)
+        );
     out = "";
 
     for (const server of servers) {
